@@ -1,7 +1,7 @@
 import subprocess
 
-def run(f, dbtype, workers, tmp_dir, models_dir, nocut_ga):
-    arg_nocut = "--no-cut-ga" if nocut_ga else ""
+def run(f, dbtype, workers, tmp_dir, models_dir, no_cut_ga):
+    arg_nocut = "--no-cut-ga" if no_cut_ga else ""
     arg_dir = f"--models-dir {models_dir}" if models_dir is not None else ""
 
     script = f"""
