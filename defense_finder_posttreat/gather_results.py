@@ -77,4 +77,4 @@ def export_tables(tmp_dir, outdir):
     systems.to_csv(f'{outdir}/defense_finder_systems.tsv', sep='\t')
 
     hmms = gather_hmmer_results(tmp_dir)
-    hmms.to_csv(f'{outdir}/defense_finder_hmmer.tsv', sep='\t')
+    hmms.to_csv(f'{outdir}/defense_finder_hmmer.tsv', sep='\t', index=False)
